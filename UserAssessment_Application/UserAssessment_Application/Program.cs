@@ -37,7 +37,7 @@ var connectionString = builder.Configuration.GetConnectionString("AuthdbConnecti
 //DOCKER
 //var connectionString  = builder.Configuration.GetConnectionString("AuthdbConnection")
 //    ?? "Server=postgres;Port=5432;Database=authdb;User Id=dbuser;Password=Passwordtest1;Timeout=30;CommandTimeout=60;Include Error Detail=true";
-
+ 
 
 
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseNpgsql(connectionString));
