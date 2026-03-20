@@ -1,6 +1,0 @@
-services:
-  userassessment_application:
-    image: ${DOCKER_REGISTRY-}userassessmentapplication
-    build:
-      context: .
-      dockerfile: UserAssessment_Application\Dockerfile
